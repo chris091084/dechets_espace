@@ -3,6 +3,7 @@
 .navbar {
     width: 100%;
     box-shadow: none;
+    padding: 0 40px;
 }
 
 .bg-home {
@@ -12,10 +13,6 @@
 .bg-color {
     background: #06032F;
     ;
-}
-
-.navbar-brand {
-    padding-left: 20px;
 }
 
 li .nav-link {
@@ -51,6 +48,7 @@ div.btn_engaged a {
     overflow: visible;
     font-family: 'roboto_monoregular';
     letter-spacing: 0.05em;
+    display: inline-block;
 }
 
 div.btn_engaged a:hover {
@@ -58,13 +56,13 @@ div.btn_engaged a:hover {
     -webkit-box-shadow: 0px 0px 20px 0px rgba(61, 216, 196, 1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(61, 216, 196, 1);
     box-shadow: 0px 0px 20px 0px rgba(61, 216, 196, 1);
+    text-decoration: none;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     font-family: 'roboto_monoregular';
-    font-size: 1.3em;
     letter-spacing: 0.05em;
 }
 
@@ -98,7 +96,7 @@ footer p {
     letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 991px) {
     .abonnement {
         display: flex;
         flex-direction: column;
@@ -106,8 +104,14 @@ footer p {
         justify-content: space-between;
         width: 100%;
     }
+    .les_liens {
+        text-align: center;
+    }
     .les_liens>a>img {
         padding-right: 15px;
+    }
+    .les_liens img {
+        margin-bottom: 20px;
     }
 }
 
@@ -120,14 +124,39 @@ footer p {
 }
 
 .les_liens {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-image: linear-gradient(#3827B4, rgb(6, 3, 47));
-    padding: 80px 0;
+    padding: 80px 40px;
     -webkit-box-shadow: 0px -25px 51px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px -25px 51px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px -25px 51px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/*.les_liens .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
+
+.les_liens ul {
+    padding-left: 0;
+}
+
+.les_liens li {
+    list-style-type: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+}
+
+.les_liens li a {
+    font-size: 13px;
+}
+
+.les_liens li span {
+    font-size: 1.3em;
+    line-height: 2.5em;
 }
 
 .bl1 {
@@ -136,11 +165,10 @@ footer p {
 }
 
 button {
-    padding: 6px 15px;
+    padding: 10px 15px;
     background-color: #3DD8C4;
     border: none;
     color: white;
-    margin-left: -13.5px;
 }
 
 footer input {

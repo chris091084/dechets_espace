@@ -1,0 +1,83 @@
+
+
+/*PAGE ISABELLE*/
+#actions {
+ padding: 200px 0 0 0;
+}
+#actions a {
+    color:#3DD8C4;
+    font-family: 'roboto_monobold';
+}
+#actions a:hover {
+    text-decoration: none;
+}
+.item1 .card-deck {
+    padding-bottom: 50px;
+}
+.item1 .card-body {
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.item1 .card img {
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.benevoles {
+    background:  linear-gradient(0deg, rgba(56,39,180,1) 0%, rgba(56,39,180,1) 62%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+    padding:100px 0; 
+    }
+
+.benevoles .col-lg-6:last-child {
+    margin-top: 100px;
+}
+.benevoles .col-lg-6 img {
+    margin: 0 auto;
+    display: block; }
+
+
+#container .item1{
+    background-color: #F2F2F2;
+}
+#container .item2{
+    background-color: white;
+}
+.item1{
+    padding:100px 0 50px 0;
+}
+
+.item1 h3 {
+    color:#3827B4;
+}
+
+.item1 .card {
+    border: 0;
+}
+
+/* Portrait*/
+
+
+.card-text{
+    text-align:center;
+}
+.card-body {
+    text-align: center;
+}
+
+/*Responsive Images*/
+
+@media only screen and (max-width: 991px){
+  /*Page 1*/
+    .colonne1{
+    margin:0;
+    margin-left: 80px;
+    padding-bottom: 20px;
+    }
+
+.card{
+    margin: 35px;
+}
+}

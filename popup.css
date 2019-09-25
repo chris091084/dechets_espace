@@ -1,0 +1,84 @@
+.bg-modal {
+width: 100%;
+height: 100%;
+background-color:rgba(0,0,0,0.7);
+position: absolute;
+top: -300px;
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+z-index: 2;
+}
+
+.modal-content {
+width: 600px;
+height: 650px;
+background:url( "./assets/background_jeMengage.jpg") no-repeat center center;
+border: none;
+border-radius: 0;
+text-align: center;
+padding: 50px;
+position: relative;
+display: block;
+}
+
+.modal-content input{
+width: 80%;
+display: block;
+margin: 20px auto;
+font-size: 14px;
+border: none;
+height: 40px;
+}
+
+.close {
+position: absolute;
+top: 0;
+right: 14px;
+font-size: 42px;
+transform: rotate(45deg);
+cursor: pointer;
+color: white;
+opacity: 1;
+}
+
+.close:hover{
+    color: white;
+}
+
+.modal-content .button
+{
+color: #fff;
+background-color: #3DD8C4;;
+padding: 0.5em;
+border-radius: 5px;
+text-decoration: none;
+font-size: 18px;
+}
+
+.modal-content .button1
+{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    overflow: visible;
+    font-family: 'roboto_monoregular';
+    letter-spacing: 0.05em;
+    display: inline-block;
+    background: #3DD8C4;
+    text-transform: uppercase;
+}
+
+.modal-content h2, .modal-content h3, .modal-content .text
+{
+margin: auto;
+color: white;
+padding: 2%;
+line-height: 1.3em;
+}
+
+.modal-content h3
+{
+color:#3DD8C4;;
+}

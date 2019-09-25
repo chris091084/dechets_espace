@@ -1,15 +1,7 @@
-h2 /* Titre "contact" */
-{
-color: #140058;
-margin-bottom: 3%;
-padding-top: 3%;
-}
 
-.container /* Voir avec Maïté */
-{
-padding-left: 2%;
+#contact {
+    padding-top:200px; 
 }
-
 .container1 /* Bloc adresse et mail */
 {
 display: flex;
@@ -19,48 +11,92 @@ color: black;
 font-weight: bold;
 }
 
-input /* Informations à remplir par l'utilisateur */
+.form-group input /* Informations à remplir par l'utilisateur */
 {
-background-image: linear-gradient(to right, #320086, #491b9c);
+background-color: #3827B4;
 opacity: 0.9;
 color: #ffffff !important;
-border: groove 1px grey !important;
+border: none;
 border-radius: 0 !important;
-width: 60% !important;
 }
 
+.form-group label /* Titre de l'information à remplir par l'utilisateur */
+{
+font-size: 16px;
+color: #5F5F5F;
+font-family: 'roboto_monoregular';
+}
+.form-group ::placeholder { 
+    color:white;
+    opacity: 1; /* Firefox */
+}
+
+.form-check .form-check-input {
+    margin-top: 0;
+}
+
+form .form-check{
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+display: flex;
+margin-top: 20px;
+}
 textarea /* Message à remplir par l'utilisateur */
 {
-background-image: linear-gradient(to right, #320086, #491b9c);
+background-color: #3827B4;
 opacity: 0.9;
 width: 100%;
-margin-top: 1%;
-border: groove 1px grey !important;
+border: none;
 font-size: 1rem;
 padding: .375rem .75rem;
-color: #495057;
-width: 60%;    
+color:white;
+width: 100%;    
 }
 
-button /* Bouton "envoyer" */
+#emailHelp .btn  /* Bouton "envoyer" */
 {
+float: right;
 background-color: #00dbc7 !important;
 color: #ffffff !important;
 border-color: #00dbc7 !important;
 border-radius: 0 !important;
 }
 
-iframe /* Centrage de la map Google */
+li.contact_address /* Interligne entre les éléments d'adresse et email */
 {
-		width: 1200px;
-		height: 300px;
-		margin: auto;		
+font-family: 'roboto_monoregular';
+color: #5F5F5F;
+list-style-type: none;
 }
 
-#carte_google /* Bordure de la map Google */
+li.contact_address a{
+    color:#3DD8C4;
+}
+li.contact_address a:hover {
+    text-decoration: none;
+}
+.address /* Casser le float */
 {
-		width: 1200px;
-		height: 300px;
-		margin: auto;		
-		border: 1px solid black;
-}		
+padding-top: 30px;
+}
+.address ul {
+    padding-left: 0;
+}
+
+#carte_google 
+{
+    margin-top: 50px;
+overflow:hidden;
+position:relative;
+height:400px;
+}
+	
+#carte_google iframe /* Map Google responsive */
+{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
