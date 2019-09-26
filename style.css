@@ -27,6 +27,11 @@ li .nav-link:hover {
     color: #3DD8C4 !important;
 }
 
+.ongletstat{
+    border: 1px solid #3DD8C4;
+    color: #3DD8C4 !important;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     /****pour donner la couleur blanche aux lien du nav****/
     color: white;

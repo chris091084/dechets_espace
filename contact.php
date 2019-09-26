@@ -12,30 +12,9 @@
     </head>
 
 <body>
-        <nav class="navbar grey_shadows_blur navbar-expand-lg navbar-dark bg-color">
-				<a href="home_page.html" class="navbar-brand"><img src="assets/logo_unis-vert.png" alt="logo unis-vert"></a>
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-						<span class="navbar-toggler-icon"></span>        
-					</button>
-				<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a href="nos_action.html" class="nav-link">Nos actions</a>
-						</li>
-						<li class="nav-item">
-							<a href="kit.html" class="nav-link">Le kit du nettoyeur</a>
-						</li>
-						<li class="nav-item">
-							<a href="contact.html" class="nav-link">Contact</a>
-						</li>
-						<li class="nav-item">
-                            <div class="btn_engaged green_background">
-                                <a href="#" id="button_engaged" class="button">JE M'ENGAGE</a>
-                            </div>
-						</li>
-					</ul>
-				</div>
-			</nav>
+
+    <?php include("navbarre.php"); ?>
+
     <section id="contact">
     <div class="container">
         <div class="row">
@@ -96,55 +75,10 @@
 <div id="carte_google">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.2486673943486!2d4.825337515472792!3d45.74616052260593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ab96b2285%3A0xd07b1fb24dc8242f!2s17%20Rue%20Delandine%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1568753241054!5m2!1sfr!2sfr" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
-</section>   
-<footer>
-        <section class="abonnement purple_background">
-            <div class="abonn1">
-                <p>S'abonner à notre newsletter</p>
-                <form action=" " method="post ">
-                <input type="email " name="email " id="email " placeholder="Votre email "> <button type="button ">valider</button>
-            </div>
-            </form>
-            <div class="social ">
-                <a href="#" class="twitter ">
-                    <span style="font-size: 3em; color: rgb(255, 255, 255); ">
-                <i class="fab fa-twitter-square "></i>
-                </span>
-                </a>
-                <a href="# " class="facebook "><span style="font-size: 3em; color: rgb(255, 255, 255); ">
-                <i class="fab fa-facebook "></i>
-                </span>
-                </a>
-                <a href="# " class="slack "><span style="font-size: 3em; color: rgb(255, 255, 255); ">
-                <i class="fab fa-slack "></i>
-                </span>
-                </a>
-            </div>
-        </section>
-        <section class="les_liens">
-            <div class="row">
-            <div class="col-lg-2 col-sm-12">
-            <a href="home_page.html"><img src="assets/logo_unis-vert.png" alt="logo unis-vert"></a>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <ul>
-                    <li><span>Nous situer:</span></li>
-                    <li>17 rue Delandine</li>
-                    <li>69002 LYON</li>
-                    <li>Email : <a href="mailto:unis-vert@gmail.com">unis-vert@gmail.com</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <ul>
-                    <li><a href="nos_action.html">Nos actions</a></li>
-                    <li><a href="kit.html">Le kit du nettoyeur</a><li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li> <a href="#">Mentions légales</a></li>
-                </ul>      
-            </div>
-        </div>
-    </section>
-</footer> 
+</section>
+
+    <?php include("footer.php"); ?>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
