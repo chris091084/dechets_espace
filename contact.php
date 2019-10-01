@@ -3,6 +3,56 @@
 
 <?php include("head.php"); ?>
 
+<?php
+
+$noms=$email=$object=$message=$checkbox="";
+
+if ($_SERVER["REQUEST_METHOD"]== "POST"){
+    $noms=test_input ($_POST["noms"]);
+    $email=test_input ($_POST["email"]);
+    $object=test_input ($_POST["object"]);
+    $message=test_input ($_POST["message"]);
+
+
+
+}
+
+function test_input($data){
+
+    $data=htmlspecialchars($data);
+    $data=stripcslashes($data);
+    $data=trim($data);
+    return $data;
+}
+
+?>
+
+<?php
+
+$errNoms=$errEmail=$errObject=$errMessage=$errCheckbox="";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["noms"])) {
+        $errNoms = "L'unis-vert n'aime pas le vide, merci d'entrer votre noms";
+    } else {
+        $noms = test_input($_POST["noms"]);
+    }
+    if (empty($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+        $errEmail = "L'unis-vert n'aime pas le vide, merci d'entrer votre e-mail au format exemple@domaine.com";
+    } else {
+        $email = test_input($_POST["email"]);
+    }
+    if (empty($_POST["Object"])) {
+        $errObject = "L'unis-vert n'aime pas le vide, merci d'entrer votre objet du message";
+    } else {
+        $object = test_input($_POST["object"]);
+    }
+
+}
+?>
+
+
+
 <body>
 
     <?php include("navbarre.php"); ?>
@@ -28,26 +78,30 @@
                 </section>
             </div>
             <div class="col-lg-6">
-                <form>
+                <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <div class="form-group">
                         <label>Votre nom</label>
-                        <input type="email" class="form-control" placeholder="Entrez votre nom">
+                        <input type="text" name="noms" class="form-control" placeholder="Entrez votre nom">
+                        <span class="error"> <?php echo $errNoms ?>  </span>
                         <small id="emailHelp" class="form-text text-muted">
                     </div>
                     <div class="form-group">
                         <label>Votre email</label>
-                        <input type="email" class="form-control" placeholder="email@email.com">
+                        <input type="em" name="email" class="form-control" placeholder="email@email.com">
+                        <span class="error"> <?php echo $errEmail ?>  </span>
                     </div>
                     <div class="form-group">
                         <label>Objet</label>
-                        <input type="object" class="form-control" placeholder="L'objet de votre message">
+                        <input type="object"  name="object" class="form-control" placeholder="L'objet de votre message">
+                        <span class="error"> <?php echo $errObject ?>  </span>
                     </div>
                     <div class="form-group">
                         <label>Votre message</label>
-                        <textarea rows="4" cols="22" name="message">Dites nous en plus</textarea>
+                        <textarea rows="4" cols="22" name="message" placeholder="Dites nous en plus"></textarea>
+                        <span class="error"> <?php echo $errMessage ?>  </span>
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <input type="checkbox" class="form-check-input" name="checkbox" id="exampleCheck1">
                         <label class="form-check-label">S'abonner à la newsletter</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer</button>   

@@ -15,7 +15,7 @@ font-weight: bold;
 {
 background-color: #3827B4;
 opacity: 0.9;
-color: #ffffff !important;
+color: black !important;
 border: none;
 border-radius: 0 !important;
 }
@@ -33,6 +33,10 @@ font-family: 'roboto_monoregular';
 
 .form-check .form-check-input {
     margin-top: 0;
+}
+.error {
+    color:red!important;
+    font-family: 'roboto_monoregular'!important;
 }
 
 form .form-check{
