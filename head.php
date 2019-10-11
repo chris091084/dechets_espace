@@ -1,4 +1,4 @@
-<?php  var_dump($_SERVER['REQUEST_URI']);
+<?php
 
 $title = $_SERVER['REQUEST_URI'];
 
@@ -21,7 +21,8 @@ if($title !=null){echo $title2;}else{echo $title;}
 ;?>
 
 
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <title><?php echo $title; ?></title>
